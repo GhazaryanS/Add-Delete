@@ -1,0 +1,47 @@
+* {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(41, 41, 41);
+}
+
+.container {
+    max-width: 1080px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.canvas__board {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    margin: 20px;
+    /* padding: 10px; */
+    border: 1px solid rgb(41, 41, 41);
+    transition: all 0.4s;
+}
+
+.canvas__board:hover {box-shadow: 5px 10px 8px 10px #888888;}
+
+.canvas__cub{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 1000;
+}
+
+.canvas__button {
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.canvas__button button {margin-bottom: 20px;}
+
+
