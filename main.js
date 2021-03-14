@@ -18,7 +18,7 @@ board.onclick = event => {
     if(userStatus === 'add') {
         let xCoordinate = event.layerX - 15;
         let yCoordinate = event.layerY - 15;
-        if(xCoordinate <16 || yCoordinate < 16){
+        if(xCoordinate <16 || yCoordinate < 16 || xCoordinate > 735 || yCoordinate > 385){
             return alert(`Will be outside the area or a Cub has already been created there.
             Try clicking elsewhere!!!`);
         };
